@@ -1,6 +1,6 @@
 /* General Body Styling */
 body {
-  background-image: '/workspaces/webs/my-portfolio/pics/frutiger_aero_wallpaper_by_elfwink_dgwoh12-fullview.jpg'; /* Adjust this to your image path */
+  background-image: url('/pics/frutiger_aero_wallpaper_by_elfwink_dgwoh12-fullview.jpg'); /* Adjust this to your image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

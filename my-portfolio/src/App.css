@@ -1,10 +1,65 @@
 /* General Body Styling */
 body {
+  background-image: '/workspaces/webs/my-portfolio/pics/frutiger_aero_wallpaper_by_elfwink_dgwoh12-fullview.jpg'; /* Adjust this to your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   margin: 0;
   padding: 0;
 }
+
+.intro {
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text Animation */
+@keyframes fadeInMoveUp {
+0% {
+  opacity: 0;
+  transform: translateY(30px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.animated-text {
+  font-size: 3rem;
+  color: #00f5ff; /* Aqua blue */
+  text-align: center;
+  margin-top: 200px;
+  animation: fadeInMoveUp 3s ease-out forwards;
+}
+
+.sub-text {
+  font-size: 2rem;
+  color: #ffa500; /* Orange */
+  text-align: center;
+  animation: fadeInMoveUp 3s ease-out forwards;
+  animation-delay: 0.5s; /* Delayed subtitle */
+}
+
+/* Example Button */
+button {
+  background-color: #00f5ff; /* Aqua */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffa500;  /* Orange on hover */
+}
+
 
 /* Header Styling */
 header {

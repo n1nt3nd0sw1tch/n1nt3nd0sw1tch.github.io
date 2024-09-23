@@ -23,11 +23,12 @@ const App = () => {
           gyroControls: false,
           minHeight: 200.00,
           minWidth: 200.00,
-          highlightColor: 0x30e1cc,
-          midtoneColor: 0xff004b,
-          lowlightColor: 0x7261dc,
+          highlightColor: 0x65de65,
+          midtoneColor: 0x9b8dc8,
+          lowlightColor: 0xa20ceb,
           blurFactor: 0.50,
-          zoom: 1.50,
+          speed: 2.00,
+          zoom: 2.50
         })
       );
     }

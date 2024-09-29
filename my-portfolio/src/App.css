@@ -1,160 +1,38 @@
-/* General Body Styling */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Cambria', 'Cambria Math', serif;
-  height: 100%;
-  overflow-x: hidden;
+.App {
+  text-align: center;
 }
 
-/* Make sure the Vanta background covers the entire viewport */
-.vanta-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  z-index: -1; /* Ensure it's behind other content */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-/* Navbar Styling */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #333;
-  padding: 15px;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 25px 25px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar ul li button {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.4rem;
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 25px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.navbar ul li button:hover {
-  background-color: #555;
-  transform: scale(1.05);
-}
-
-/* Ensure content is padded from the top */
-.content-container {
-  padding: 150px 20px;
+.App-header {
+  background-color: #282c34;
   min-height: 100vh;
-  z-index: 2; /* Ensure it's on top of the Vanta background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-
-section {
-  background-color: rgba(255, 255, 255, 0.882);
-  border-radius: 25px;
-  padding: 50px;
-  margin: 30px auto;
-  max-width: 900px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+.App-link {
+  color: #61dafb;
 }
 
-h1, h2 {
-  color: #333;
-}
-
-.animated-text {
-  font-size: 4rem;
-  color: #444;
-  animation: fadeIn 2s ease-in-out;
-}
-
-.sub-text {
-  font-size: 2rem;
-  color: #888;
-}
-
-.project-card {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 30px;
-  margin: 20px 0;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.cv-button {
-  background-color: #3f72af;
-  color: #fff;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 1.5rem;
-  transition: background-color 0.3s ease;
-  margin-top: 20px;
-}
-
-.cv-button:hover {
-  background-color: #ffde7d;
-  transform: scale(1.05);
-}
-
-.contact-icons a {
-  margin: 0 15px;
-  color: #555;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.contact-icons a:hover {
-  color: #ffb703;
-  transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-
-  .content-container {
-    padding: 120px 20px;
-  }
-
-  .animated-text {
-    font-size: 2.5rem;
+  to {
+    transform: rotate(360deg);
   }
 }
-
-.sub-text {
-  font-size: 1.5rem;
-}
-
-.project-card {
-  margin-bottom: 20px;
-}
-
-.cv-button {
-  padding: 10px 20px;
-}
-
-.contact-icons a {
-  font-size: 1.5rem;
-}
-
